@@ -1,0 +1,86 @@
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header>
+<h1>Cryptographic algorithems</h1>
+<ul>
+  <li><a href="mainpage.html">mainpage</a></li>
+  <li><a href="Cryptography definition.html">Cryptography definition</a></li>
+  <li><a href="History of cryptography.html">History of cryptography</a></li>
+  <li><a href="Cryptography techniques.html">Cryptography techniques</a></li>
+</header>
+</ul>
+<div><p class="y">Cryptosystems use a set of procedures known as cryptographic algorithms, or ciphers, to encrypt and decrypt messages to secure communications among computer systems, devices such as smartphones, and applications. A cipher suite uses one algorithm for encryption, another algorithm for message authentication, and another for key exchange. This process, embedded in protocols and written in software that runs on operating systems and networked computer systems, involves public and private key generation for data encryption/decryption, digital signing and verification for message authentication, and key exchange.</p>
+
+<h3>Types of cryptography</h3>
+<p>Single-key or symmetric-key encryption algorithms create a fixed length of bits known as a block cipher with a secret key that the creator/sender uses to encipher data (encryption) and the receiver uses to decipher it. Types of symmetric-key cryptography include the Advanced Encryption Standard (AES), a specification established in November 2001 by the National Institute of Standards and Technology as a Federal Information Processing Standard (FIPS 197), to protect sensitive information. The standard is mandated by the U.S. government and widely used in the private sector.
+
+In June 2003, AES was approved by the U.S. government for classified information. It is a royalty-free specification implemented in software and hardware worldwide. AES is the successor to the Data Encryption Standard (DES) and DES3. It uses longer key lengths (128-bit, 192-bit, 256-bit) to prevent brute force and other attacks.
+
+Public-key or asymmetric-key encryption algorithms use a pair of keys, a public key associated with the creator/sender for encrypting messages and a private key that only the originator knows (unless it is exposed or they decide to share it) for decrypting that information. The types of public-key cryptography include RSA, used widely on the internet; Elliptic Curve Digital Signature Algorithm (ECDSA) used by Bitcoin; Digital Signature Algorithm (DSA) adopted as a Federal Information Processing Standard for digital signatures by NIST in FIPS 186-4; and Diffie-Hellman key exchange.
+
+To maintain data integrity in cryptography, hash functions, which return a deterministic output from an input value, are used to map data to a fixed data size. Types of cryptographic hash functions include SHA-1 (Secure Hash Algorithm 1), SHA-2 and SHA-3.
+</p>
+<img id="p03"src="https://www.researchgate.net/publication/284467708/figure/fig1/AS:391993101438978@1470469846345/Types-of-Cryptography.png">
+<table>
+  <tr>
+    <th>Feature / Algorithm</th>
+    <th>Hash</th>
+    <th>Asymmetric</th>
+	<th>symmetric</th>
+  </tr>
+  <tr>
+    <td>No. of keys</td>
+    <td>0</td>
+    <td>1</td>
+	<td>2</td>
+  </tr>
+  <tr>
+    <td>NIST recommended key length</td>
+    <td>256 bits</td>
+    <td>128 bits</td>
+    <td>2048 bits</td>
+  </tr>
+  <tr>
+    <td>Commonly used</td>
+    <td>SHA</td>
+    <td>AES</td>
+    <td>RSA</td>
+  </tr>
+  <tr>
+    <td>Key management/sharing</td>
+    <td>N/A</td>
+    <td>Big issue</td>
+    <td>Easy and Secure</td>
+  </tr>
+  <tr>
+    <td>Effect of key compromise</td>
+    <td>N/A</td>
+    <td>Loss of both sender and receiver</td>
+    <td>Only loss for owner of Asymmetric key</td>
+  </tr>
+  <tr>
+    <td>Speed</td>
+    <td>Fast</td>
+    <td>Fast</td>
+    <td>2Relatively slow</td>
+  </tr>
+  <tr>
+    <td>Complexity</td>
+    <td>Medium</td>
+    <td>Medium</td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td>Examples</td>
+    <td>SHA-224, SHA-256, SHA-384 or SHA-512</td>
+    <td>AES, Blowfish, Serpent, Twofish, 3DES, and RC4</td>
+    <td>RSA, DSA, ECC, Diffie-Hellman</td>
+  </tr>
+  
+</div>
+
+</body>
+</html>
